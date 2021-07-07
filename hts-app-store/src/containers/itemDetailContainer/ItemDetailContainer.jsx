@@ -4,7 +4,7 @@ import {getData} from '../../utils/const'
 import CardDetailComponent from '../../componets/cardsDetailComponent/Card'
 import {ButtonComponent} from '../../componets/ButtonComponent'
 import {ItemComponent} from '../../componets/buttonCountComponent/ItemCount'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -39,6 +39,7 @@ if (productos.length > 0){
     <div className ="App">
     <header className = "App-header">    
         <h1 className="text-dark text-center m-5">{greeting}</h1>
+        
         <div className="container ">
         <div className="row">
         <CardDetailComponent productData={productos[0]} > 
@@ -48,7 +49,10 @@ if (productos.length > 0){
         </div>
 
         <div className="m-3">
-            <ButtonComponent text={'Ver mas productos!!'}/> 
+          <Link to={'/'}>
+           <ButtonComponent text={'Ver mas productos!!'}/> 
+          </Link>
+            
         </div>          
     </header>
     </div>      

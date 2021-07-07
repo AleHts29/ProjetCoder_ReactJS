@@ -4,7 +4,7 @@ import {getData} from '../../utils/const'
 import CardItemsComponent from '../../componets/cardsComponents/Card'
 import {ButtonComponent} from '../../componets/ButtonComponent'
 import {ItemComponent} from '../../componets/buttonCountComponent/ItemCount'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -43,24 +43,18 @@ return (
 <div className ="App">
   <header className = "App-header">    
     <h1 className="text-dark text-center">{greeting}</h1>
+    <button><Link to={'/detail'}>Ir a detalle de producto</Link></button>
     <div className="container ">
       <div className="row">
         {productos.map(element => {  
           return(
+          
+            
             // <div key={element.id}>
               <CardItemsComponent productData={element} > 
                 <ItemComponent productData={element} text={'Agregar al Carrito'}/>
               </CardItemsComponent>
             // </div>
-            // <div className="col-12 mb-3 col-md-4 border">
-            //     <div className = "card bg-dark  mt-5">
-            //       <img src={element.img} alt="" className="tamanoImg"/>
-            //       <div className = "card-body text-center">
-            //         <h5 className = "card-title text-info"> {element.title}</h5>
-            //         <strong className="text-warning">Price: $ {element.price}</strong>
-            //       </div>
-            //     </div>
-            //   </div>  
           )
         })}
       </div>
