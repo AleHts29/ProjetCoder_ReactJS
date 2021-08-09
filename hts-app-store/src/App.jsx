@@ -1,22 +1,30 @@
 import React from 'react'
 import './App.css';
+// import { Navbar } from '@material-ui/core';
+import Product from './componets/cardsComponents/Product'
+import ItemListContainer from './containers/itemsListContainer/ItemListContainer';
+import CheckoutContainer from './containers/checkOutContainer/CheckOutContainer';
 import Navbar from './componets/navbarComponents/Navbar'
-import { NAME_APP } from './utils/const';
-import HomeContainer from './containers/itemsListContainer/ItemListContainer';
-import ItemDetail from './containers/itemDetailContainer/ItemDetailContainer'
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <Navbar count={2}/>
-      <Switch>
-        <Route exact path="/" component={HomeContainer} />
-        <Route  path="/detail" component={ItemDetail} />
-        <Route  path="*" component={() => <h1>Error: 404 - Undefined</h1>} />
-      </Switch>
-    </BrowserRouter>
+    <Router>
+      <div >
+        <Navbar />
+        <Switch>
+          <Route path ='/checkout-page'>
+            <CheckoutContainer/>
+          </Route>
+          <Route path ='/'>
+            <ItemListContainer/>
+          </Route>
+          
+        </Switch>
+        {/* <CheckoutContainer/> */}
+      </div>   
+    </Router>
       
    
   )

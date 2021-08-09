@@ -5,6 +5,7 @@ import CardDetailComponent from '../../componets/cardsDetailComponent/Card'
 import {ButtonComponent} from '../../componets/ButtonComponent'
 import {ItemComponent} from '../../componets/buttonCountComponent/ItemCount'
 import { Link } from 'react-router-dom'
+import '../style.css'
 
 
 
@@ -60,7 +61,10 @@ if (productos.length > 0){
   }
 
 return(
-  <h1>Cargando data</h1>
+  <div className="container text-center">
+    <h1>Cargando data</h1>
+  </div>
+  
 )
   
 

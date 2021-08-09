@@ -1,73 +1,36 @@
-import React from 'react'
-import {useEffect, useState} from 'react'
-import {getData} from '../../utils/const'
-import CardItemsComponent from '../../componets/cardsComponents/Card'
-import {ButtonComponent} from '../../componets/ButtonComponent'
-import {ItemComponent} from '../../componets/buttonCountComponent/ItemCount'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
+import Product from '../../componets/cardsComponents/Product';
+import {products} from '../../data/product-data'
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    margin: '50px'
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
-const HomeContainer = ({greeting}) => {        
-// const product = {id:1, name:'iphone-12', price:1050, description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis minima quo repellat'};
+export default function ItemListContainer() {
+  const classes = useStyles();
 
-let [productos, setPreductos] = useState([]);
-
-
-// Actualizo los estados
-useEffect(() => {
-  const waitForData = async () => {
-    let data =  await getData('tecnologia');
-    let aux = data.map(element => {
-    return{
-      id: element.id,
-      title: element.title,
-      img: element.thumbnail,
-      price: element.price,
-      stock: element.available_quantity
-    }
-  })
-  setPreductos(aux);
-    // console.log(data);
-  }
-  console.log("antes de waitForData");
-  waitForData();
-  console.log("despues del waitForData");
-}, [])
-
-if (productos.length > 0){
-  console.log(productos);
-}
-
-return (
-<div className ="App">
-  <header className = "App-header">    
-    <h1 className="text-dark text-center">{greeting}</h1>
-    <button><Link to={'/detail'}>Ir a detalle de producto</Link></button>
-    <div className="container ">
-      <div className="row">
-        {productos.map(element => {  
-          return(
-          
-            
-            // <div key={element.id}>
-              <CardItemsComponent productData={element} > 
-                <ItemComponent productData={element} text={'Agregar al Carrito'}/>
-              </CardItemsComponent>
-            // </div>
-          )
-        })}
-      </div>
+  return (
+    <div  className={classes.root}>
+      <Grid container spacing={3}>
+        {
+          products.map(product => (
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+                <Product key={product.id} product={product}/>
+            </Grid>
+          ))
+        }
+      </Grid>
     </div>
-
-    <div className="m-3">
-        <ButtonComponent text={'Ver mas productos!!'}/> 
-    </div>
-             
-  </header>
-</div> 
-       
-    )
+  );
 }
-
-export default HomeContainer

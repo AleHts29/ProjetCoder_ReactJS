@@ -1,14 +1,23 @@
 import {useState} from 'react'
 import CardWidget from '../cardWidgetComponent/CardWidget'
 import {ButtonComponent} from '../ButtonComponent/index'
+import {actionTypes} from '../../context/reducer/reducer'
+import { useStateValue } from '../../context/shopProvider/ShopProvider';
 
-export const ItemComponent = ({productData, text}) => {
+export const ItemComponent = ({id, text}) => {
     
 
 const [cart, setCart] = useState([]);
-const [amount, setAmount] = useState(0);
+const [{amount}, setAmount] = useStateValue();
+const [{basket}, dispatch] = useStateValue();
 console.log(amount);
 console.log(cart);
+
+
+const addItem = () => dispatch({
+    type: actionTypes.ADD_ITEM,
+    id:id,
+  })
 
 let stock = 15;
 let minAmount = 0;
@@ -16,8 +25,8 @@ let minAmount = 0;
     return (
     <>
     <div className="container d-flex justify-content-center ">
-
-            <button class="btn btn-warning btn-up btn-sm "
+        <div className='border'>
+            <button className="btn  btn-up btn-sm "
                 onClick = {() => {
                     if(amount > minAmount){
                         setAmount(amount-1);
@@ -26,22 +35,33 @@ let minAmount = 0;
             >
                 -
             </button>
-            <p className="ml-3 mr-3">{amount}</p>
-            <button class="btn btn-warning btn-down btn-sm "
+        </div>
+            <p className="ml-3 mr-3 mt-1 mb-0">{amount}</p>
+            <div className='border'>
+            <button className="btn  btn-down btn-sm "
             onClick = {() => {
                 if (amount == stock){
                     return stock;
                 }
-                setAmount(amount+1);
+                else{
+                    // setAmount(amount);
+                    addItem();
+                
+                }
+                
            }}
             >
                 +
             </button>
+            </div>
+        
+
+            
     </div>
 
-    <div className="mt-3">
-        <button onClick={() => {setCart([...cart, {productData}])}}> {text}</button>
-    </div>
+    {/* <div className="mt-3">
+        <button onClick={() => {setCart([...cart, {productData}])}}> {'hola'}</button>
+    </div> */}
     
     {/* capturo la info al dar click a agregar al carrito
     <CardWidget cart={cart}/> */}

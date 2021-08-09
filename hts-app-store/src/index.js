@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {ShopProvider} from './context/shopProvider/ShopProvider'
+import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import {theme} from './temaConfig'
+import reducer, { initialState } from './context/reducer/reducer';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ShopProvider initialstate={initialState} reducer={reducer}>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </ShopProvider>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
