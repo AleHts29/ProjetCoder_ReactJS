@@ -17,6 +17,7 @@ export const products = [
           description: "Fully Produced Tracks as Ableton Projects, 30 Ableton Instruments, sample pack of 150 one hits, 60+ MIDI files, and 140+ Loops + More!",
           price: 12.99,
           rating: 5,
+          amountItem: 1,
         },
         {
           
@@ -28,6 +29,7 @@ export const products = [
           description: "Practical lessons, tips, and tricks, to take your ideas from a loop to a fully produced song.",
           price: 7.25,
           rating: 4,
+          amountItem: 1,
         },
         {
           
@@ -39,6 +41,7 @@ export const products = [
           description: "Do you have problems writing catchy Melodies? Then this Step by Step guide is for you!",
           price: 8.59,
           rating: 5,
+          amountItem: 1,
         },
         {
           
@@ -50,6 +53,7 @@ export const products = [
           description: "FStunning Organic Sounds About Woodlands Vol.1 // organic house Add some real organic crunch into your productions, full of life,...",
           price: 2.00,
           rating: 4,
+          amountItem: 1,
         },
         {
           
@@ -61,6 +65,7 @@ export const products = [
           description: "Learn the Complete Mixing Process About this Course In this 5+ Hour Mixing Course we'll show you the complete mixing...",
           price: 2.90,
           rating: 5,
+          amountItem: 1,
         },
         {
           
@@ -72,6 +77,7 @@ export const products = [
           description: "Make Your Drums Sound Professional About this Course This course is entirely dedicated to building professional sounding drum loops for...",
           price: 2.00,
           rating: 4,
+          amountItem: 1,
         },
       
 ]

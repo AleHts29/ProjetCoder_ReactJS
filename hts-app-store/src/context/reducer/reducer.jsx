@@ -4,6 +4,7 @@ export const initialState = {
     basket:[],
     cantidadTotal: 0,
     amount: 1,
+    arr: 0,
 }
 
 
@@ -14,7 +15,8 @@ export const initialState = {
 export const actionTypes = {
     ADD_TO_BASKET: 'ADD_TO_BASKET',
     REMOVE_ITEM: 'REMOVE_ITEM',
-    ADD_ITEM: 'ADD_ITEM'
+    ADD_ITEM: 'ADD_ITEM',
+    LESS_ITEM: 'LESS_ITEM'
 }
 
 // Funcion para calcular el monto total de todos los productos (usando metodo reduce)
@@ -47,11 +49,8 @@ const reducer = (state, action) => {
                 return {
                     ...state,
                     basket:[...state.basket, action.item],
-                    cantidadTotal: state.cantidadTotal + 1,
-                    
-                    
-                };
-                
+                    cantidadTotal: state.cantidadTotal + 1,  
+                };     
             }
             
             
@@ -72,23 +71,35 @@ const reducer = (state, action) => {
         case 'ADD_ITEM':
             const index2 = state.basket.findIndex((basketItem => basketItem.id === action.id))
             let newBasket2 = [...state.basket];
-            // if (index2 >= 0){
-            //     newBasket2.splice(index2, 1)
-            // }else {console.log('Can´t remove product')}
-            
-            console.log('Hola');
+            if (index2 >= 0){
+                // newBasket2.splice(index2, 1)
+                newBasket2[index2].amountItem += 1;
+                console.log(newBasket2[index2].name)
+                console.log(newBasket2[index2].amountItem)
+            }
             return {
                 ...state,
                 basket: newBasket2,
-                cantidadTotal: state.cantidadTotal + 1,
-                amount: state.amount + 1,
+                arr: index2,
+                cantidadTotal: state.cantidadTotal + 1
             }
-            
-            ;
-            
-        // }
-            
-
+        
+        case 'LESS_ITEM':
+            const index3 = state.basket.findIndex((basketItem => basketItem.id === action.id))
+            let newBasket3 = [...state.basket];
+            if (index3 >= 0){
+                // newBasket2.splice(index2, 1)
+                newBasket3[index3].amountItem -= 1;
+                // console.log(newBasket2[index2].name)
+                // console.log(newBasket2[index2].amountItem)
+            }
+            return {
+                ...state,
+                basket: newBasket3,
+                arr: index3,
+                cantidadTotal: state.cantidadTotal - 1
+            }
+                
 
         default: return state;
     }

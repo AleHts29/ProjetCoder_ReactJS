@@ -26,7 +26,7 @@ const TotalComponent = () => {
 
 console.log(basket)
 const valor = getBasketTotal(basket)
-console.log(cantidadTotal)
+// console.log(cantidadTotal)
 
 
     return (

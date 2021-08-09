@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CheckOutCard({product:{id, name, title, desciption, image, price, rating}}) {
+export default function CheckOutCard({product:{id, name, title, desciption, image, price, rating, amountItem}}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [{basket}, dispatch] = useStateValue();
@@ -90,7 +90,7 @@ export default function CheckOutCard({product:{id, name, title, desciption, imag
         
         {/* Aumentar canridad*/}
         <div className='sm-12'>
-          <ItemComponent id={id}/>
+          <ItemComponent key={id} itemId={id} amountItem={amountItem}/>
         </div>
         <IconButton>
             <DeleteIcon onClick={removeItem}/>

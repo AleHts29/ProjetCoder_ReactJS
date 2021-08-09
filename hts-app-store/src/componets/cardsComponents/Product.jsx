@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Product({product:{id, productType, name, title, description, image, price, rating}}) {
+export default function Product({product:{id, productType, name, title, description, image, price, rating, amountItem}}) {
   const classes = useStyles();
   const [{basket}, dispatch] = useStateValue();
   const [expanded, setExpanded] = React.useState(false);
@@ -63,6 +63,7 @@ export default function Product({product:{id, productType, name, title, descript
         price,
         rating,
         description,
+        amountItem,
       }
 
     })

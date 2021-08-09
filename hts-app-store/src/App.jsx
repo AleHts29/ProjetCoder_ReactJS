@@ -14,11 +14,11 @@ function App() {
       <div >
         <Navbar />
         <Switch>
-          <Route path ='/'>
-            <ItemListContainer/>
-          </Route>
           <Route path ='/checkout-page'>
             <CheckoutContainer/>
+          </Route>
+          <Route path ='/'>
+            <ItemListContainer/>
           </Route>
           
         </Switch>
