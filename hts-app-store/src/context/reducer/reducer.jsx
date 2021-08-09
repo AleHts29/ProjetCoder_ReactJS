@@ -21,7 +21,7 @@ export const actionTypes = {
 
 // Funcion para calcular el monto total de todos los productos (usando metodo reduce)
 export const getBasketTotal = (basket) => {
-    return basket?.reduce((amount, ppp) =>  ppp.price + amount, 0)
+    return basket?.reduce((amount, item) =>  item.totalPrice + amount, 0)
     // console.log(total);
 
 }
@@ -74,6 +74,7 @@ const reducer = (state, action) => {
             if (index2 >= 0){
                 // newBasket2.splice(index2, 1)
                 newBasket2[index2].amountItem += 1;
+                newBasket2[index2].totalPrice = (newBasket2[index2].price * newBasket2[index2].amountItem);
                 console.log(newBasket2[index2].name)
                 console.log(newBasket2[index2].amountItem)
             }
@@ -90,6 +91,7 @@ const reducer = (state, action) => {
             if (index3 >= 0){
                 // newBasket2.splice(index2, 1)
                 newBasket3[index3].amountItem -= 1;
+                newBasket3[index3].totalPrice = (newBasket3[index3].price * newBasket3[index3].amountItem);
                 // console.log(newBasket2[index2].name)
                 // console.log(newBasket2[index2].amountItem)
             }
