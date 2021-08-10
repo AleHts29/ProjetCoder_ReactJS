@@ -5,6 +5,7 @@ export const initialState = {
     cantidadTotal: 0,
     amount: 1,
     arr: 0,
+    user: null,
 }
 
 
@@ -16,7 +17,10 @@ export const actionTypes = {
     ADD_TO_BASKET: 'ADD_TO_BASKET',
     REMOVE_ITEM: 'REMOVE_ITEM',
     ADD_ITEM: 'ADD_ITEM',
-    LESS_ITEM: 'LESS_ITEM'
+    LESS_ITEM: 'LESS_ITEM',
+    SET_USER: 'SET_USER',
+    EMPTY_BASKET: 'EMPTY_BASKET',
+
 }
 
 // Funcion para calcular el monto total de todos los productos (usando metodo reduce)
@@ -100,6 +104,19 @@ const reducer = (state, action) => {
                 basket: newBasket3,
                 arr: index3,
                 cantidadTotal: state.cantidadTotal - 1
+            }
+
+        case 'SET_USER':
+            return{
+                ...state,
+                user: action.user
+            }
+        
+        case 'EMPTY_BASKET':
+            return {
+                ...state,
+                basket: action.basket,
+                user: null,
             }
                 
 

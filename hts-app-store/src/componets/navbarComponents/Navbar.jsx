@@ -12,6 +12,9 @@ import {Badge} from '@material-ui/core'
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../context/shopProvider/ShopProvider';
 import CardWidget from '../cardWidgetComponent/CardWidget';
+import { actionTypes } from '../../context/reducer/reducer';
+import { useHistory } from 'react-router-dom';
+import { auth } from '../../fireBase/fireBase';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -40,18 +43,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
   const classes = useStyles();
-  const [{basket}, dispatch] = useStateValue();
+  const [{basket, user}, dispatch] = useStateValue();
   const [{cantidadTotal}] = useStateValue();
+  const history = useHistory();
+
+
+  const btnAuth = ()=>{
+    if(user){
+      auth.signOut()
+      dispatch({
+        type: actionTypes.EMPTY_BASKET,
+        basket: [],
+        user: null
+      });
+      history.push("/")
+    }
+  }
 
 
   function CardWidgetList(){
     return(
         <React.Fragment>
-           
                 <Grid item xs={12} sm={8} md={6} lg={4}>
-                    
                 </Grid>
-        
         </React.Fragment>
     );
 }
@@ -67,9 +81,14 @@ export default function Navbar() {
           </Link>
           
           <Typography variant="h6"  className={classes.title}>
-            Hello Juan
+             {user ? `Hello ${user.email}`: ''}
+             {/* {user ? user.email: 'hola'} */}
           </Typography>
-          <Button variant="outlined" color="primary">Login</Button>
+          <Link to="/signin">
+            <Button variant="outlined" color="primary" onClick={btnAuth}>{user ? 'Sign Out':'Sign In'}
+            </Button>
+          </Link>
+          
           <Link to='checkout-page'>
           <IconButton aria-label="show cart items" color="primary">
             <Badge badgeContent={cantidadTotal} color="secondary">
