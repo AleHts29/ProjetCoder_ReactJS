@@ -116,6 +116,7 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: action.basket,
+                cantidadTotal: 0,
                 user: null,
             }
                 

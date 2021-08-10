@@ -1,6 +1,7 @@
 import React from 'react'
 import accounting from 'accounting'
 import {Button, makeStyles} from '@material-ui/core'
+import { Link } from 'react-router-dom';
 
 import {useStateValue}  from '../../context/shopProvider/ShopProvider';
 import { getBasketTotal } from '../../context/reducer/reducer';
@@ -34,9 +35,12 @@ const valor = getBasketTotal(basket)
             <h5>Total item: {cantidadTotal}</h5>
             <h5>{accounting.formatMoney(getBasketTotal(basket), '$')}</h5>
             
-            <Button  className={classes.button} variant='contained' color='secondary'>
-                Check Out
-            </Button>
+            <Link to='/checkout'>
+                <Button  className={classes.button} variant='contained' color='secondary'>
+                    Check Out
+                </Button>
+            </Link>
+            
             
         </div>
     )

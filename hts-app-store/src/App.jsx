@@ -12,6 +12,7 @@ import {useEffect} from 'react';
 import {auth} from './fireBase/fireBase'
 import { actionTypes } from './context/reducer/reducer';
 import { useStateValue } from './context/shopProvider/ShopProvider';
+import Checkout from './componets/checkoutForm/Checkout';
 
 function App() {
 
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path ='/checkout-page'>
             <CheckoutContainer/>
+          </Route>
+          <Route path ='/checkout'>
+            <Checkout/>
           </Route>
           <Route path ='/'>
             <ItemListContainer/>
