@@ -4,13 +4,17 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import { useForm, FormProvider } from 'react-hook-form';
 
 export default function AddressForm() {
+    const methods = useForm();
+
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
         Shipping address
       </Typography>
+      <FormProvider {...methods}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <TextField
@@ -91,6 +95,7 @@ export default function AddressForm() {
           />
         </Grid>
       </Grid>
+      </FormProvider>
     </React.Fragment>
   );
 }

@@ -56,7 +56,7 @@ export default function SignIn() {
 
   const signin = (e) =>{
       e.preventDefault();
-      auth.signInWithEmailAndPassword(email, password).then((auth)=>history.push("/")).catch(err=>alert(err.message))
+      auth.signInWithEmailAndPassword(email, password).then((auth)=>history.push("/category/home")).catch(err=>alert(err.message))
   }
 
   return (

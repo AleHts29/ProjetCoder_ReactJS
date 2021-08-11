@@ -35,22 +35,21 @@ function App() {
       <div >
         <Navbar />
         <Switch>
-          <Route path ='/signup'>
+          <Route exact path ='/signup'>
             <SignUp/>
           </Route>
-          <Route path ='/signin'>
+          <Route exact path ='/signin'>
             <SignIn/>
           </Route>
-          <Route path ='/checkout-page'>
+          <Route exact path ='/checkout-page'>
             <CheckoutContainer/>
           </Route>
-          <Route path ='/checkout'>
+          <Route exact path ='/checkout'>
             <Checkout/>
           </Route>
-          <Route path ='/'>
-            <ItemListContainer/>
-          </Route>
-          
+          <Route path ='/category/:id' component={ItemListContainer}/>
+          <Route exact path ='/' component = {ItemListContainer}/>
+          <Route path ='*' component={() => <h1>ERROR: 404</h1>}/>
         </Switch>
         {/* <CheckoutContainer/> */}
       </div>   

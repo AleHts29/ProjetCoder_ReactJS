@@ -74,9 +74,29 @@ export default function Navbar() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.bgColor}>
         <Toolbar >
-          <Link to='/' className={classes.link} style={{ textDecoration: 'none' }}>
+          <Link to='/category/home' className={classes.link} style={{ textDecoration: 'none' }}>
             <IconButton edge="start" className={classes.menuButton}   color="primary" aria-label="menu">
               <strong><h4>HT - store</h4></strong>
+            </IconButton>
+          </Link>
+          <Link to='/category/home' className={classes.link} style={{ textDecoration: 'none' }}>
+            <IconButton edge="start" className={classes.menuButton}   color="primary" aria-label="menu">
+              <strong><h6>Home</h6></strong>
+            </IconButton>
+          </Link>
+          <Link to='/category/course' className={classes.link} style={{ textDecoration: 'none' }}>
+            <IconButton edge="start" className={classes.menuButton}   color="primary" aria-label="menu">
+              <strong><h6>Courses</h6></strong>
+            </IconButton>
+          </Link>
+          <Link to='/category/Midi' className={classes.link} style={{ textDecoration: 'none' }}>
+            <IconButton edge="start" className={classes.menuButton}   color="primary" aria-label="menu">
+              <strong><h6>Midi</h6></strong>
+            </IconButton>
+          </Link>
+          <Link to='/category/Audio' className={classes.link} style={{ textDecoration: 'none' }}>
+            <IconButton edge="start" className={classes.menuButton}   color="primary" aria-label="menu">
+              <strong><h6>Audio</h6></strong>
             </IconButton>
           </Link>
           
@@ -89,7 +109,7 @@ export default function Navbar() {
             </Button>
           </Link>
           
-          <Link to='checkout-page'>
+          <Link to='/checkout-page'>
           <IconButton aria-label="show cart items" color="primary">
             <Badge badgeContent={cantidadTotal} color="secondary">
               <ShoppingCart fontSize="large"/>

@@ -6,6 +6,7 @@ export const initialState = {
     amount: 1,
     arr: 0,
     user: null,
+    shippingData: {},
 }
 
 
@@ -20,6 +21,7 @@ export const actionTypes = {
     LESS_ITEM: 'LESS_ITEM',
     SET_USER: 'SET_USER',
     EMPTY_BASKET: 'EMPTY_BASKET',
+    SET_SHIPPINGDATA: 'SET_SHIPPINGDATA'
 
 }
 
@@ -111,18 +113,7 @@ const reducer = (state, action) => {
                     basket: newBasket3,
                     cantidadTotal: state.cantidadTotal - 1
                 }
-                
 
-                // newBasket2.splice(index2, 1)
-                // console.log(newBasket2[index2].name)
-                // console.log(newBasket2[index2].amountItem)
-            
-            return {
-                ...state,
-                basket: newBasket3,
-                arr: index3,
-                cantidadTotal: state.cantidadTotal - 1
-            }
 
         case 'SET_USER':
             return{
