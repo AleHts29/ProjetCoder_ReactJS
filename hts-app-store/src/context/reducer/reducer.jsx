@@ -69,7 +69,7 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 basket: newBasket,
-                cantidadTotal: state.cantidadTotal - 1
+                cantidadTotal: state.cantidadTotal - state.basket[index].amountItem
             }
 
         case 'ADD_ITEM':
@@ -92,13 +92,31 @@ const reducer = (state, action) => {
         case 'LESS_ITEM':
             const index3 = state.basket.findIndex((basketItem => basketItem.id === action.id))
             let newBasket3 = [...state.basket];
-            if (index3 >= 0){
+            if (newBasket3[index3].amountItem <= 1){
+                newBasket3.splice(index3, 1)
+                return{
+                    ...state,
+                    basket: newBasket3,
+                    cantidadTotal: state.cantidadTotal - 1
+                }
+                
+            }
+                else
+                    newBasket3[index3].amountItem -= 1;
+                    newBasket3[index3].totalPrice = (newBasket3[index3].price * newBasket3[index3].amountItem);
+                
+                
+                return{
+                    ...state,
+                    basket: newBasket3,
+                    cantidadTotal: state.cantidadTotal - 1
+                }
+                
+
                 // newBasket2.splice(index2, 1)
-                newBasket3[index3].amountItem -= 1;
-                newBasket3[index3].totalPrice = (newBasket3[index3].price * newBasket3[index3].amountItem);
                 // console.log(newBasket2[index2].name)
                 // console.log(newBasket2[index2].amountItem)
-            }
+            
             return {
                 ...state,
                 basket: newBasket3,
