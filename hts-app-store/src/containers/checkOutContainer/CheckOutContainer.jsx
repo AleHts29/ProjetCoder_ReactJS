@@ -62,7 +62,7 @@ const CheckoutContainer = () => {
                 {cantidadTotal == 0 ? 
                     <Grid className='' item xs={12} container spacing={2}>
                         <Grid  item xs={2}  spacing={2}>
-                            <Link to='/' className={classes.link} style={{ textDecoration: 'none' }}>
+                            <Link to='/category/home' className={classes.link} style={{ textDecoration: 'none' }}>
                                 <IconButton edge="start" className={classes.menuButton} aria-label="menu">
                                     <KeyboardReturnRoundedIcon/>
                                     <strong><h4>Back to list</h4></strong>

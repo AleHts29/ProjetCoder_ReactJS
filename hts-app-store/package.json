@@ -2,7 +2,7 @@
   "name": "hts-app-store",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alehts29.github.io/ProjetCoder_ReactJS/",
+  "homepage": "https://alehts29.github.io/category/home",
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
