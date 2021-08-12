@@ -14,6 +14,7 @@ import { actionTypes } from './context/reducer/reducer';
 import { useStateValue } from './context/shopProvider/ShopProvider';
 import { CartContexComponent } from './context/cartContext/CartContext';
 import Checkout from './componets/checkoutForm/Checkout';
+import Error404 from './componets/Error404/Error404';
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
           </Route>
           <Route path ='/category/:id' component={ItemListContainer}/>
           <Route exact path ='/' component = {ItemListContainer}/>
-          <Route path ='*' component={() => <h1>ERROR: 404</h1>}/>
+          <Route path ='*' component={Error404}/>
         </Switch>
         {/* <CheckoutContainer/> */}
       </div>

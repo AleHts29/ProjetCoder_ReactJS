@@ -41,7 +41,7 @@ const [{cantidadTotal}] = useStateValue();
                     ))
                     }
                 </table>
-                    <Link to='checkout-page' style={{ textDecoration: 'none' }}>
+                    <Link to='/checkout-page' style={{ textDecoration: 'none' }}>
                     <IconButton aria-label="show cart items">
                         <strong>go to CART</strong>
                         

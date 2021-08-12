@@ -46,7 +46,7 @@ console.log(nuevo)
       
           
           
-      <Grid container spacing={3}>
+      <Grid  xs={12} container spacing={3}>
         {    
           nuevo.map(product => (
             <Grid item xs={12} sm={6} md={4} lg={3}>
