@@ -71,6 +71,7 @@ export default function Navbar() {
 }
 
   return (
+    <Grid  item xs={12} container spacing={2}>
     <div className={classes.root}>
       <AppBar position="static" className={classes.bgColor}>
         <Toolbar >
@@ -120,6 +121,7 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
     </div>
+    </Grid>
   );
 }
 
