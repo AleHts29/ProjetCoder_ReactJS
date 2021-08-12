@@ -1,37 +1,25 @@
 {
   "files": {
     "main.css": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css",
-    "main.js": "/ProjetCoder_ReactJS/static/js/main.dc2edd40.chunk.js",
-    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.dc2edd40.chunk.js.map",
+    "main.js": "/ProjetCoder_ReactJS/static/js/main.fe9bf52a.chunk.js",
+    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.fe9bf52a.chunk.js.map",
     "runtime-main.js": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js",
     "runtime-main.js.map": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js.map",
     "static/css/2.081f420c.chunk.css": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css",
-    "static/js/2.5ec164ed.chunk.js": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js",
-    "static/js/2.5ec164ed.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js.map",
+    "static/js/2.99661731.chunk.js": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js",
+    "static/js/2.99661731.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js.map",
     "static/js/3.15fb6665.chunk.js": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js",
     "static/js/3.15fb6665.chunk.js.map": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js.map",
     "index.html": "/ProjetCoder_ReactJS/index.html",
     "static/css/2.081f420c.chunk.css.map": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css.map",
     "static/css/main.4ad75eb9.chunk.css.map": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css.map",
-    "static/js/2.5ec164ed.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js.LICENSE.txt",
-    "static/media/ABLETON.9457a00c.png": "/ProjetCoder_ReactJS/static/media/ABLETON.9457a00c.png",
-    "static/media/AURI_ATH.8793fe8e.png": "/ProjetCoder_ReactJS/static/media/AURI_ATH.8793fe8e.png",
-    "static/media/AURI_MARSHALL.1ad122b0.png": "/ProjetCoder_ReactJS/static/media/AURI_MARSHALL.1ad122b0.png",
-    "static/media/DEEP.dc8fe59a.png": "/ProjetCoder_ReactJS/static/media/DEEP.dc8fe59a.png",
-    "static/media/GROOVE.60bf1041.png": "/ProjetCoder_ReactJS/static/media/GROOVE.60bf1041.png",
-    "static/media/INTERSTELLAR.2704b740.png": "/ProjetCoder_ReactJS/static/media/INTERSTELLAR.2704b740.png",
-    "static/media/MIDI_AKAI.6e7f9146.png": "/ProjetCoder_ReactJS/static/media/MIDI_AKAI.6e7f9146.png",
-    "static/media/MIDI_ARTURIA.4e53f29b.png": "/ProjetCoder_ReactJS/static/media/MIDI_ARTURIA.4e53f29b.png",
-    "static/media/MIDI_PUSH.5da71a36.png": "/ProjetCoder_ReactJS/static/media/MIDI_PUSH.5da71a36.png",
-    "static/media/MIXING.c3a4182e.png": "/ProjetCoder_ReactJS/static/media/MIXING.c3a4182e.png",
-    "static/media/MONITOR_BRONZE100.5c126a54.png": "/ProjetCoder_ReactJS/static/media/MONITOR_BRONZE100.5c126a54.png",
-    "static/media/ORGANIC.5153a510.png": "/ProjetCoder_ReactJS/static/media/ORGANIC.5153a510.png"
+    "static/js/2.99661731.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.72ac098f.js",
     "static/css/2.081f420c.chunk.css",
-    "static/js/2.5ec164ed.chunk.js",
+    "static/js/2.99661731.chunk.js",
     "static/css/main.4ad75eb9.chunk.css",
-    "static/js/main.dc2edd40.chunk.js"
+    "static/js/main.fe9bf52a.chunk.js"
   ]
 }
