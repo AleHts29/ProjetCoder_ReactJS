@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css",
-    "main.js": "/ProjetCoder_ReactJS/static/js/main.fe9bf52a.chunk.js",
-    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.fe9bf52a.chunk.js.map",
-    "runtime-main.js": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js",
-    "runtime-main.js.map": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js.map",
+    "main.js": "/ProjetCoder_ReactJS/static/js/main.9c2d12ea.chunk.js",
+    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.9c2d12ea.chunk.js.map",
+    "runtime-main.js": "/ProjetCoder_ReactJS/static/js/runtime-main.f78f1aeb.js",
+    "runtime-main.js.map": "/ProjetCoder_ReactJS/static/js/runtime-main.f78f1aeb.js.map",
     "static/css/2.081f420c.chunk.css": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css",
-    "static/js/2.99661731.chunk.js": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js",
-    "static/js/2.99661731.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js.map",
-    "static/js/3.15fb6665.chunk.js": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js",
-    "static/js/3.15fb6665.chunk.js.map": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js.map",
+    "static/js/2.7af4f414.chunk.js": "/ProjetCoder_ReactJS/static/js/2.7af4f414.chunk.js",
+    "static/js/2.7af4f414.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.7af4f414.chunk.js.map",
+    "static/js/3.b158afc2.chunk.js": "/ProjetCoder_ReactJS/static/js/3.b158afc2.chunk.js",
+    "static/js/3.b158afc2.chunk.js.map": "/ProjetCoder_ReactJS/static/js/3.b158afc2.chunk.js.map",
     "index.html": "/ProjetCoder_ReactJS/index.html",
     "static/css/2.081f420c.chunk.css.map": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css.map",
     "static/css/main.4ad75eb9.chunk.css.map": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css.map",
-    "static/js/2.99661731.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.99661731.chunk.js.LICENSE.txt"
+    "static/js/2.7af4f414.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.7af4f414.chunk.js.LICENSE.txt",
+    "static/media/error.db7e0309.jpeg": "/ProjetCoder_ReactJS/static/media/error.db7e0309.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.72ac098f.js",
+    "static/js/runtime-main.f78f1aeb.js",
     "static/css/2.081f420c.chunk.css",
-    "static/js/2.99661731.chunk.js",
+    "static/js/2.7af4f414.chunk.js",
     "static/css/main.4ad75eb9.chunk.css",
-    "static/js/main.fe9bf52a.chunk.js"
+    "static/js/main.9c2d12ea.chunk.js"
   ]
 }
