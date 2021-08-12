@@ -12,6 +12,7 @@ import {useEffect} from 'react';
 import {auth} from './fireBase/fireBase'
 import { actionTypes } from './context/reducer/reducer';
 import { useStateValue } from './context/shopProvider/ShopProvider';
+import { CartContexComponent } from './context/cartContext/CartContext';
 import Checkout from './componets/checkoutForm/Checkout';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <Router>
+      <CartContexComponent>
       <div >
         <Navbar />
         <Switch>
@@ -52,7 +54,9 @@ function App() {
           <Route path ='*' component={() => <h1>ERROR: 404</h1>}/>
         </Switch>
         {/* <CheckoutContainer/> */}
-      </div>   
+      </div>
+    </CartContexComponent>
+
     </Router>
       
    

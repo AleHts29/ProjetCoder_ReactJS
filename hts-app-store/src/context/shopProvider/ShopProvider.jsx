@@ -1,5 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 
+
 export const ShopContext = createContext();
 
 export const ShopProvider = ({reducer, initialstate,  children}) => (
@@ -9,5 +10,10 @@ export const ShopProvider = ({reducer, initialstate,  children}) => (
 );
 
 
-// Permite consumir los datos desde cualquier componente
+
+
+
+
+
+
 export const useStateValue = () => useContext(ShopContext);

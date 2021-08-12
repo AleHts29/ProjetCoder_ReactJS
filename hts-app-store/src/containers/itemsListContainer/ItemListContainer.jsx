@@ -1,9 +1,13 @@
-import {useState} from 'react';
+import {useEffect, useState, useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Product from '../../componets/cardsComponents/Product';
 import {products} from '../../data/product-data'
 import { useParams } from 'react-router-dom';
+import { getFirestore } from '../../fireBase/fireBase';
+import { CartContext } from '../../context/cartContext/CartContext';
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function ItemListContainer() {
+  
+  const ShopContext = useContext(CartContext);
+console.log(ShopContext.listProducts);
+
   const [cart, setCart] = useState([]);
   const {id} = useParams();
   const classes = useStyles();
@@ -25,7 +33,11 @@ export default function ItemListContainer() {
 // setCart(products);
 // console.log(cart)
 
-let nuevo = products.filter(function (e){
+
+
+
+
+let nuevo = ShopContext.listProducts.filter(function (e){
   return (e.category_id === id || e.home === id)
 });
 
