@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css",
-    "main.js": "/ProjetCoder_ReactJS/static/js/main.5abf95dd.chunk.js",
-    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.5abf95dd.chunk.js.map",
-    "runtime-main.js": "/ProjetCoder_ReactJS/static/js/runtime-main.6a0d315c.js",
-    "runtime-main.js.map": "/ProjetCoder_ReactJS/static/js/runtime-main.6a0d315c.js.map",
+    "main.js": "/ProjetCoder_ReactJS/static/js/main.5685e914.chunk.js",
+    "main.js.map": "/ProjetCoder_ReactJS/static/js/main.5685e914.chunk.js.map",
+    "runtime-main.js": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js",
+    "runtime-main.js.map": "/ProjetCoder_ReactJS/static/js/runtime-main.72ac098f.js.map",
     "static/css/2.081f420c.chunk.css": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css",
-    "static/js/2.03adff10.chunk.js": "/ProjetCoder_ReactJS/static/js/2.03adff10.chunk.js",
-    "static/js/2.03adff10.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.03adff10.chunk.js.map",
-    "static/js/3.4d239cea.chunk.js": "/ProjetCoder_ReactJS/static/js/3.4d239cea.chunk.js",
-    "static/js/3.4d239cea.chunk.js.map": "/ProjetCoder_ReactJS/static/js/3.4d239cea.chunk.js.map",
+    "static/js/2.5ec164ed.chunk.js": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js",
+    "static/js/2.5ec164ed.chunk.js.map": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js.map",
+    "static/js/3.15fb6665.chunk.js": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js",
+    "static/js/3.15fb6665.chunk.js.map": "/ProjetCoder_ReactJS/static/js/3.15fb6665.chunk.js.map",
     "index.html": "/ProjetCoder_ReactJS/index.html",
     "static/css/2.081f420c.chunk.css.map": "/ProjetCoder_ReactJS/static/css/2.081f420c.chunk.css.map",
     "static/css/main.4ad75eb9.chunk.css.map": "/ProjetCoder_ReactJS/static/css/main.4ad75eb9.chunk.css.map",
-    "static/js/2.03adff10.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.03adff10.chunk.js.LICENSE.txt",
+    "static/js/2.5ec164ed.chunk.js.LICENSE.txt": "/ProjetCoder_ReactJS/static/js/2.5ec164ed.chunk.js.LICENSE.txt",
     "static/media/ABLETON.9457a00c.png": "/ProjetCoder_ReactJS/static/media/ABLETON.9457a00c.png",
     "static/media/AURI_ATH.8793fe8e.png": "/ProjetCoder_ReactJS/static/media/AURI_ATH.8793fe8e.png",
     "static/media/AURI_MARSHALL.1ad122b0.png": "/ProjetCoder_ReactJS/static/media/AURI_MARSHALL.1ad122b0.png",
@@ -28,10 +28,10 @@
     "static/media/ORGANIC.5153a510.png": "/ProjetCoder_ReactJS/static/media/ORGANIC.5153a510.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a0d315c.js",
+    "static/js/runtime-main.72ac098f.js",
     "static/css/2.081f420c.chunk.css",
-    "static/js/2.03adff10.chunk.js",
+    "static/js/2.5ec164ed.chunk.js",
     "static/css/main.4ad75eb9.chunk.css",
-    "static/js/main.5abf95dd.chunk.js"
+    "static/js/main.5685e914.chunk.js"
   ]
 }
