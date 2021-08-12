@@ -1,11 +1,11 @@
-import {useEffect, useState, useContext} from 'react';
+import {useState, useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Product from '../../componets/cardsComponents/Product';
-import {products} from '../../data/product-data'
 import { useParams } from 'react-router-dom';
-import { getFirestore } from '../../fireBase/fireBase';
 import { CartContext } from '../../context/cartContext/CartContext';
+// import {products} from '../../data/product-data'
+// import { getFirestore } from '../../fireBase/fireBase';
 
 
 
@@ -32,9 +32,6 @@ console.log(ShopContext.listProducts);
   
 // setCart(products);
 // console.log(cart)
-
-
-
 
 
 let nuevo = ShopContext.listProducts.filter(function (e){
